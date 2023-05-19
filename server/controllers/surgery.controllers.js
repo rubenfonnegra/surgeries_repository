@@ -43,7 +43,7 @@ export const createSurgery = async (req, res) => {
 export const updateSurgery = async (req, res) => {
     try {
         const { nombre, descripcion, tecnica, variante, referencia } = req.body
-        let image;
+        let image = null;
         if (req.files?.image) {
             console.log("/////existe una imagen//////",req.files.image)
             const result = await uploadImage(req.files.image.tempFilePath)
@@ -52,8 +52,15 @@ export const updateSurgery = async (req, res) => {
                 url: result.secure_url,
                 public_id: result.public_id
             }
+
             const oldData = await Surgery.findById(req.params.id)
-            if (oldData.image) {
+
+            console.log("/////if old image//////",oldData)
+            console.log("/////if old image//////",Object.keys(oldData.image).length)
+            const pepe = Object.entries(oldData.image)
+            console.log("/////pepe//////",pepe)
+
+            if (oldData.image?.public_id){
                 await deleteImage(oldData.image.public_id)
                 console.log("/////if old data//////",oldData.image)
                 console.log("/////borraste esta imagen//////",oldData.image.public_id)
