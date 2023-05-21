@@ -100,8 +100,9 @@ Este tema lo podemos tratar. Yo sugeriría CC-BY-NC 4.0, pero podemos mirarlo lu
 
 ## Contacto:
 
-**🗣️** [Santiago Ruiz](https://github.com/SnNig1) \
-**🗣️** [Rubén Fonnegra](https://github.com/rubenfonnegra)
+**🗣️** [Santiago Ramirez](https://github.com/SnNig1) \
+**🗣️** [Rubén Fonnegra](https://github.com/rubenfonnegra) \
+**🗣️** Jaime Soto
 
 
 **✉️ Email:** <!-- tu email, en caso de que quieras ponerlo -->
