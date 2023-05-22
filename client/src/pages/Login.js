@@ -40,17 +40,12 @@ export function LoginPage() {
     e.preventDefault();
 
     try {
-      // Realiza la solicitud POST al endpoint del backend
-      const response = await axios.post("http://localhost:4000/userfind", {
+      await axios.post("http://localhost:4000/userfind", {
         nombre,
         password,
-      }); // Procesa la respuesta del backend
-      console.log(response.data); // Puedes hacer algo más con la respuesta, como guardar un token de autenticación // Restablece los campos del formulario
-
+      });
       setUsername("");
-
       setPassword("");
-
       setError("")
       navigate('/AdminPage');
     } catch (error) {

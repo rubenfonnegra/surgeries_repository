@@ -19,6 +19,27 @@ La operación del repositorio depende de la instalación de los siguientes paque
  - [MongoDB](https://www.mongodb.com/)
  - [Cloudinary](https://cloudinary.com/)
 
+## Variables de Entorno
+
+Para la ejecución correcta del programa es necesario configurar las siguientes variables de entorno
+
+### Variables de entorno para MongoDB
+
+```
+MONGODB_URI = URI de base de datos
+PORT = 4000
+```
+
+### Variables de entorno para Cloudinary
+
+Crear una cuenta en cloudinary y desde el menú Dashboard consultar las Product Environment Credentials y remplazar su resultado
+
+```
+CLOUD_NAME = pon aquí el Cloud Name
+API_KEY = pon aquí la API Key
+API_SECRET = pon aquí la API Secret
+```
+
 ## Iniciando el Backend ⚙️🛠️
 
 Para iniciar el backend del repositorio sólo deberás ejecutar el siguiente comando en la raíz del proyecto:

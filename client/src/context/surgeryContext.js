@@ -40,12 +40,6 @@ export const SurgeryProvider = ({children}) => {
 
     const updatePost = async ( id, surgery) => {
         const resSurgery = await updatePostRequest(id, surgery)
-        console.log("////////id///////////")
-        console.log(id)
-        console.log("////////surgery///////////")
-        console.log(surgery)
-        console.log("////////res-surgery///////////")
-        console.log(resSurgery)
         setSurgeries(surgeries.map(surgery => surgery._id === id ? resSurgery.data: surgery))
     }
 

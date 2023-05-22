@@ -18,16 +18,11 @@ export function SurgeryFormPage() {
     image: null,
     referencia: "",
   });
-  console.log(params);
 
   useEffect(() => {
     (async () => {
       if (params.id) {
-        console.log("*********params.id*********");
-        console.log(params.id);
         const surgery = await getSurgery(params.id);
-        console.log("**********surgery********");
-        console.log(surgery);
         setSurgery(surgery);
       }
     })();
@@ -59,8 +54,6 @@ export function SurgeryFormPage() {
 
             if (params.id) {
               await updatePost(params.id, values);
-              console.log("//////////values/////////////")
-              console.log(values)
             } else {
               await createSurgery(values);
             }
