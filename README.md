@@ -19,28 +19,25 @@ La operación del repositorio depende de la instalación de los siguientes paque
  - [MongoDB](https://www.mongodb.com/)
  - [Cloudinary](https://cloudinary.com/)
 
-## Variables de Entorno
+### Variables de Entorno
 
-Para la ejecución correcta del programa es necesario configurar las siguientes variables de entorno
+Para la ejecución correcta del repositorio es necesario configurar las siguientes variables de entorno para las herramientas **MongoDB** y **Cloudinary**. \
 
-### Variables de entorno para MongoDB
-
+- Para MongoDB hace falta incluír:
 ```
 MONGODB_URI = URI de base de datos
 PORT = 4000
 ```
 
-### Variables de entorno para Cloudinary
-
-Crear una cuenta en cloudinary y desde el menú Dashboard consultar las Product Environment Credentials y remplazar su resultado
+- Para Cloudinary hace falta crear una cuenta en su respectivo [sitio web](https://cloudinary.com/) y desde el menú Dashboard consultar las Product Environment Credentials. Una vez obtenidas las credenciales hace falta reemplazarlas en las siguientes variables
 
 ```
-CLOUD_NAME = pon aquí el Cloud Name
-API_KEY = pon aquí la API Key
-API_SECRET = pon aquí la API Secret
+CLOUD_NAME = <Cloud Name>
+API_KEY = <API Key> 
+API_SECRET = <API Secret>
 ```
 
-## Iniciando el Backend ⚙️🛠️
+### Iniciando el Backend ⚙️🛠️
 
 Para iniciar el backend del repositorio sólo deberás ejecutar el siguiente comando en la raíz del proyecto:
 
@@ -52,7 +49,7 @@ npm run dev
 Este comando ejecutará el script definido en el archivo ```package.json``` que generalmente se encarga de iniciar el servidor backend.
 
 
-## Ejecutando el Cliente 💻📱
+### Ejecutando el Cliente 💻📱
 
 Para iniciar el cliente deberás ingresar en el directorio ```client``` y ejecutar el siguiente comando en la raíz del proyecto:
 
@@ -82,13 +79,16 @@ Al hacer clic en el nombre de una cirugía se desplegará la consulta con la inf
 
 <center> <img src="Images/consulta.png" width="500px"/> </center>
 
+\
+Esta consulta arrojará la información necesarioa para que el especialista determine si la cirugía consultada corresponde con el procedimiento adecuado que debe practicar, y las recomendaciones posteriores a este procedimiento.
+
+
+## Trabajos futuros y posibles mejoras 📚🚀
+
+Dado que este repositorio es preliminar, se pretende expandir la base de datos con más entradas y diferentes tipos de procedimientos basados en fuentes científicas establecidas.
+
 
 ## Agradecimientos
-
-<!--
-Pon aquí tu programa de pasantías con el que realizaste parte de tu trabajo. 
--->
-
 
 Este repositorio ha sido creado y construido con el apoyo de la [Institución Universitaria Pascual Bravo](https://pascualbravo.edu.co/) (IUPB).
 
@@ -101,8 +101,6 @@ Este tema lo podemos tratar. Yo sugeriría CC-BY-NC 4.0, pero podemos mirarlo lu
 -->
 
 
-
-
 ## Contacto:
 
 **🗣️** [Santiago Ramírez Valencia](https://github.com/SnNig1) \
@@ -110,8 +108,8 @@ Este tema lo podemos tratar. Yo sugeriría CC-BY-NC 4.0, pero podemos mirarlo lu
 **🗣️** Jaime Soto
 
 
-**✉️ Email Institucional: s.ramirez1@pascualbravo.edu.co**
-**✉️ Email Personal: santiago.ram.val.22@gmail.com** 
+**✉️ Email Institucional:** s.ramirez1@pascualbravo.edu.co \
+**✉️ Email Personal:** santiago.ram.val.22@gmail.com 
 
 
 
